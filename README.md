@@ -36,6 +36,7 @@ After all these manipulations you can run script using something like this:
 ```bash
 (myenv)runcken@dell:~/Documents/GitHub/django-orm-watching-storage-part-1$ python3 main.py
 ```
+As result you will see count of all employees passcards and separatly count of active passcards.
 
 ## Project Goals
 
