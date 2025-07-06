@@ -8,13 +8,13 @@ Security console is a website that can be connected to a remote database with vi
 
 Clone repository to your local device. To avoid problems with installing required additinal packages, use a virtual environment, for example:
 ```bash
-runcken@dell:~/Documents/GitHub/django-orm-watching-storage-part-1$ python3 -m venv myenv
+python3 -m venv myenv
 ```
 
 and then:
 
 ```bash
-runcken@dell:~/Documents/GitHub/django-orm-watching-storage-part-1$ source myenv/bin/activate
+source myenv/bin/activate
 ```
 
 Python3.12 should be already installed. Then use pip (or pip3, if there is a conflict with Python2) to install dependencies:
@@ -34,9 +34,12 @@ _dotenv==0.9.9_
 After all these manipulations you can run script using something like this:
 
 ```bash
-(myenv)runcken@dell:~/Documents/GitHub/django-orm-watching-storage-part-1$ python3 main.py
+python3 main.py
 ```
 As result you will see count of all employees passcards and separatly count of active passcards.
+
+In the setting.py, for safety reasons, environment variables are used to restrict access for credentias, such as _HOST, PORT, NAME, USER, PASSWORD_.
+Also used environment variable SECRET_KEY - A secret key for a particular Django installation. This is used to provide cryptographic signing. The file with the  contents of these variables isnt included in the repository.
 
 ## Project Goals
 
