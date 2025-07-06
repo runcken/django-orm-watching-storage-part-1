@@ -39,7 +39,7 @@ python3 main.py
 As result you will see count of all employees passcards and separatly count of active passcards.
 
 In the setting.py, for safety reasons, environment variables are used to restrict access for credentias, such as _HOST, PORT, NAME, USER, PASSWORD_.
-Also used environment variable SECRET_KEY - A secret key for a particular Django installation. This is used to provide cryptographic signing. The file with the  contents of these variables isnt included in the repository.
+Also used environment variable SECRET_KEY - A secret key for a particular Django installation. This is used to provide cryptographic signing. The file with the  contents of these variables isnt included in the repository. To use the script with your credentials, you need to create a .env file in the folder with the script, and add into it lines like PASSWORD=your_password.
 
 ## Project Goals
 
